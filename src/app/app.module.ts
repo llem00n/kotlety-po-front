@@ -8,7 +8,7 @@ import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -17,6 +17,6 @@ import { MaterialModule } from './modules/material/material.module';
     MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }

@@ -9,6 +9,7 @@ export class Event {
     public expiryDate: string,
     public city: City,
     public rating: number,
-    public tags: Array<Tag>
+    public tags: Array<Tag>,
+    public imageIds: number[],
   ) { }
 }

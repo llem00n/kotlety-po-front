@@ -1,0 +1,11 @@
+<div class="main">
+  <div class="items-container">
+    <div class="item" *ngFor="let event of events">
+      <div class="image-container"><img [src]="imagesUrl + '/' + event.imageIds[0]"></div>
+      <div class="text-container">
+        <p class="rating">{{event.rating}}</p>
+        <p class="name">{{event.name}}</p>
+      </div>
+    </div>
+  </div>
+</div>

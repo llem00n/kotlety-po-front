@@ -1,11 +1,15 @@
-<div class="main">
-  <div class="items-container">
+<div class="main" #main>
+  <div class="items-container" #items>
     <div class="item" *ngFor="let event of events">
-      <div class="image-container"><img [src]="imagesUrl + '/' + event.imageIds[0]"></div>
+      <div class="image-container"><img [src]="imagesUrl + event.imageIds[0] + '.jpg'" [alt]="event.name"></div>
       <div class="text-container">
-        <p class="rating">{{event.rating}}</p>
+        <p class="rating"> <mat-icon [inline]="true">star</mat-icon> {{event.rating}}</p>
         <p class="name">{{event.name}}</p>
       </div>
     </div>
+  </div>
+  <div class="buttons-container">
+    <button mat-mini-fab color="basic" (click)="leftClick()" class="left" style="width:2rem;height:2rem;background-color:white;"><mat-icon>chevron_left</mat-icon></button>
+    <button mat-mini-fab color="basic" (click)="rightClick()" class="right" style="width:2rem;height:2rem;background-color:white;"><mat-icon>chevron_right</mat-icon></button>
   </div>
 </div>

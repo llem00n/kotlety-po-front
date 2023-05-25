@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { SharedModule } from './modules/shared/shared.module';
+import { MainPageModule } from './modules/main-page/main-page.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,6 +21,8 @@ import { SharedModule } from './modules/shared/shared.module';
     MaterialModule,
     BrowserModule,
     SharedModule,
+    MainPageModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

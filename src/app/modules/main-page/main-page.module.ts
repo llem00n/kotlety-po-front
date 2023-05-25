@@ -4,6 +4,7 @@ import { ItemsGridComponent } from './components/items-grid/items-grid.component
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { MaterialModule } from '../material/material.module';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -16,7 +17,11 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
     FormsModule,
+    SharedModule,
   ],
-  exports: [SearchBarComponent]
+  exports: [
+    ItemsGridComponent,
+    SearchBarComponent
+  ]
 })
 export class MainPageModule { }

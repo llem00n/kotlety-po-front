@@ -5,6 +5,7 @@ import { MatChipsModule } from '@angular/material/chips'
 import { MatIconModule } from '@angular/material/icon'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import {NgFor} from '@angular/common';
 
 const modules = [
   MatChipsModule,
@@ -12,6 +13,8 @@ const modules = [
   MatIconModule,
   MatInputModule,
   MatButtonModule,
+  NgFor,
+  
 ]
 
 @NgModule({
